@@ -1,61 +1,58 @@
-document.write(`<table border=1>`)
-let totalPrice = 0
-let index = 0
-let product1 = "Вареники"
-let productCount1 = 2
-let productPrice1 = 130
-let productGeneral1 = productCount1 * productPrice1
-totalPrice = productGeneral1 + totalPrice
+
+let product1 = "iPhone 14" 
+let productDesc1 = "Базовая модель флагманской линейки смартфонов Apple 2023-го года." 
+let productPrice1 = 9000 
 
 
-document.write(`<tr>
-              <th>№</th>
-              <th>Товар</th>
-              <th>Кол-во</th>
-              <th>Стоимость за еденицу</th>
-              <th>Общую стоимость товара</th>
-              </tr>`)
+document.write(`<div class="body__main">`)
 
-index = index + 1
+document.write(`<h1 class="title">Корзина</h1>`)
 
-document.write(`<tr>
-              <th>${index}</th>
-              <th>${product1}</th>
-              <th>${productCount1}</th>
-              <th>${productPrice1}</th>
-              <th>${productGeneral1}</th>
-              </tr>`)
+document.write(`<div class=container1>`)
 
-let product2 = "Яблоки"
-let productCount2 = 3
-let productPrice2 = 60
-let productGeneral2 = productPrice2 * productCount2
-totalPrice = totalPrice + productGeneral2
-index = index + 1
+document.write(`<h1 class="title__product1">${product1}</h1>`)
 
-document.write(`
-              <th>${index}</th>
-              <th>${product2}</th>
-              <th>${productCount2}</th>
-              <th>${productPrice2}</th>
-              <th>${productGeneral2}</th>
-              `)
-let product3 = "Молоко"
-let productCount3 = 1
-let productPrice3 = 90
-let productGeneral3 = productPrice3 * productCount3
-totalPrice = totalPrice + productGeneral3
-index = index + 1
+document.write(`<p class="advantages1">${productDesc1}</p>`)
 
-document.write(`<tr>
-              <th>${index}</th>
-              <th>${product3}</th>
-              <th>${productCount3}</th>
-              <th>${productPrice3}</th>
-              <th>${productGeneral3}</th>
-              </tr>`)
+document.write(`<p class="price1">${productPrice1}руб</p>`)
 
-document.write(`<tr>
-              <th colspan="4">Стоимость всех товаров</th>
-              <th>${totalPrice}</th>
-              </tr>`)
+document.write(`</div>`)
+
+
+let product2 = "Чехол для iPhone 14" 
+let productDesc2 = "Защитный чехол для iPhone 14 - выполнен из качественного пластика." 
+let productPrice2 = 700 
+
+document.write(`<div class=container2>`)
+
+document.write(`<h1 class="title__product2">${product2}</h1>`)
+
+document.write(`<p class="advantages2">${productDesc2}</p>`)
+
+document.write(`<p class="price2">${productPrice2}руб</p>`)
+
+document.write(`</div>`)
+
+let product3 = "Защитное стекло" 
+let productDesc3 = "Прочное стекло защищает экран смартфона от царапин и повреждений." 
+let productPrice3 = 1200 
+
+document.write(`<div class=container3>`)
+
+document.write(`<h1 class="title__product3">${product3}</h1>`)
+
+document.write(`<p class="advantages3">${productDesc3}</p>`)
+
+document.write(`<p class="price3">${productPrice3}руб</p>`)
+
+document.write(`</div>`)
+
+let deliveryPrice = 400 
+let deliveryPriceTotal = productPrice1 + productPrice2 + productPrice3
+
+document.write(`<div class="footer">`)
+
+document.write(`<h3 class="delivery__price">Стоимость доставки: ${deliveryPrice} руб.</h3>`)
+
+document.write(`<h2 class="delivery-total__price">Стоимость доставки: ${deliveryPriceTotal} руб.</h2>`)
+
